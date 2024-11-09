@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Movie Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">𝙈𝙤𝙫𝙚𝙚 𝙈𝙖𝙩𝙧𝙞𝙭</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="movieCategory.html" class="nav-link"><span>Category</span></a></li>
+	          <li class="nav-item"><a href="manageMovie.html" class="nav-link"><span>Manage</span></a></li>
+	          <li class="nav-item"><a href="reportPage.html" class="nav-link"><span>Report</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  
+	  <div class="px-4 py-5 my-5">
+      <div class = "row">
+      <div class = "col-6">
+      <h2>Add Movie Name</h2>
+      <form>
+        <div class="mb-3">
+          <label for="iename" class="form-label">Movie Name</label>
+          <input type="text" class="form-control" id="movname" />
+        </div>
+        
+        <div class="mb-3">
+          <select class="form-select" id = "movcategory">
+             <option selected>Select</option>
+             <option value="Horror">Horror</option>
+             <option value="Thriller">Thriller</option>
+             <option value="Sci-F">Sci-F</option>
+             <option value="Fantasy">Fantasy</option>
+             <option value="Mystery">Mystery</option>
+             <option value="Comedy">Comedy</option>
+             <option value="Drama">Drama</option>
+             <option value="Action">Action</option>
+             <option value="Romance">Romance</option>
+             <option value="Adventure">Adventure</option>
+             <option value="Documentary">Documentary</option>
+             <option value="Animation">Animation</option>
+             <option value="Musical">Musical</option>
+             <option value="Historical">Historical</option>
+             <option value="Supernatural">Supernatural</option>
+             <option value="Superhero">Superhero</option>
+           </select>
+       </div>
+        <button type="submit" class="btn btn-primary" id = "submit">Submit</button>
+      </form>
+    </div>
+    <div class = "col-6">
+      <h3>Added Movie</h3>
+      <ul class="list-group my-2" id = "moviename"></ul>
+    </div>
+    <script src="/js/movieCategory.js"></script>
+  
+  </body>
+</html>

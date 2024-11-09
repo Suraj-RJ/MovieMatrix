@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Manage Movies - Personal Movie Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">𝙈𝙤𝙫𝙚𝙚 𝙈𝙖𝙩𝙧𝙞𝙭</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="movieCategory.html" class="nav-link"><span>Category</span></a></li>
+            <li class="nav-item"><a href="manageMovie.html" class="nav-link"><span>Manage</span></a></li>
+            <li class="nav-item"><a href="reportPage.html" class="nav-link"><span>Report</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Manage Movies</h2>
+          <form id="movieForm">
+            <div class="mb-3">
+              <select class="form-select" id="movieSelect">
+                <option selected>Select Movie</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <select class="form-select" id="categorySelect">
+                <option selected>Select Category</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="watchDate" class="form-label">Watch Date</label>
+              <input type="date" class="form-control" id="watchDate">
+            </div>
+
+            <div class="mb-3">
+              <label for="movieDuration" class="form-label">Total Duration (minutes)</label>
+              <input type="number" class="form-control" id="movieDuration" min="1">
+            </div>
+
+            <div class="mb-3">
+              <label for="movieRating" class="form-label">Rating (1-5)</label>
+              <input type="number" class="form-control" id="movieRating" min="1" max="5">
+            </div>
+            
+            <button type="button" class="btn btn-primary" id="submit">Submit</button>
+          </form>
+        </div>
+        
+        <div class="col-md-6">
+          <h2>Selected Movie Details</h2>
+          <div id="movieDetails">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/manageMovie.js"></script>
+  </body>
+</html>
